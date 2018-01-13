@@ -1,0 +1,93 @@
+body {
+    background-color: #f8f8f8;
+}
+
+a {
+    font-size: 20px;
+    color: brown;
+    font-style: oblique;
+}
+
+.menu {
+    text-align: right;
+    padding-right: 50px;
+}
+
+.menu li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: brown;
+    font-size: 130%;
+    margin: 0 5px 0 0;
+    font-family: sans-serif;
+}
+
+h3, h4 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;
+}
+
+.short_disc {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.long_disc {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.details li {
+    list-style-image: url(img/marker.png);
+}
+
+form input {
+    width: 20%;
+    height: 10px;
+    color: brown;
+    border: 1px solid brown;
+    background-color: cornsilk;
+}
+
+#submit {
+    height: 20px;
+    width: 15%;
+    background-color: chocolate;
+    color:beige;
+}
+
+
+.welcome_section {
+    color: brown;
+}
+
+.welcome {
+    background: none;
+    text-align: center;
+    color: brown;
+}
+
+.theme_site {
+    font-size: 200%;
+    text-align: center;
+    font-weight: bord;
+    font-family: monospace;
+}
+
+img {
+    outline: 3px double blue;
+}
+.item_goods img {
+    outline: none;
+}
