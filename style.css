@@ -40,3 +40,18 @@ h3, h4 {
 .details li {
     list-style-image: url(img/marker.png);
 }
+
+form input {
+    width: 20%;
+    height: 10px;
+    color: brown;
+    border: 1px solid brown;
+    background-color: cornsilk;
+}
+
+#submit {
+    height: 20px;
+    width: 15%;
+    background-color: chocolate;
+    color:beige;
+}
