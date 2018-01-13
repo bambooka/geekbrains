@@ -2,6 +2,11 @@ body {
     background-color: #f8f8f8;
 }
 
+.menu {
+    text-align: right;
+    padding-right: 50px;
+}
+
 .menu li {
     display: inline-block;
     list-style-type: none;
@@ -54,4 +59,29 @@ form input {
     width: 15%;
     background-color: chocolate;
     color:beige;
+}
+
+
+.welcome_section {
+    color: brown;
+}
+
+.welcome {
+    background: none;
+    text-align: center;
+    color: brown;
+}
+
+.theme_site {
+    font-size: 200%;
+    text-align: center;
+    font-weight: bord;
+    font-family: monospace;
+}
+
+img {
+    outline: 3px double blue;
+}
+.item_goods img {
+    outline: none;
 }
