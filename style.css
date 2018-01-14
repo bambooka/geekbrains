@@ -2,28 +2,62 @@ body {
     background-color: #f8f8f8;
 }
 
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    background-color: antiquewhite;
+    
+}
+
+header div:nth-child(2) {
+    text-align: right;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.logo img {
+    width: 130px;
+    outline: none;
+}
+
 a {
     font-size: 20px;
     color: brown;
-    font-style: oblique;
+}
+
+a:hover {
+    color: darkolivegreen;
 }
 
 .menu {
     text-align: right;
     padding-right: 50px;
+    padding-right: 90px;
+    
 }
 
 .menu li {
     display: inline-block;
     list-style-type: none;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid brown;
+    background-color: burlywood;
+    border-radius: 15px;
 }
 
 .menu li a {
     text-decoration: none;
-    color: brown;
-    font-size: 130%;
+    color: azure;
+    font-size: 170%;
     margin: 0 5px 0 0;
-    font-family: sans-serif;
+    font-family: monospace;
+}
+
+.menu li a:hover {
+    color: coral;
 }
 
 h3, h4 {
@@ -48,6 +82,11 @@ h3, h4 {
     text-align: left;
 }
 
+.long_disc::first-letter {
+    font-family: fantasy;
+    font-size: 130%;
+}
+
 .details li {
     list-style-image: url(img/marker.png);
 }
@@ -65,6 +104,15 @@ form input {
     width: 15%;
     background-color: chocolate;
     color:beige;
+}
+
+form input, textarea {
+    text-transform: capitalize;
+}
+
+.email_form:hover {
+    background-color: azure;
+    color: crimson;
 }
 
 
@@ -88,6 +136,23 @@ form input {
 img {
     outline: 3px double blue;
 }
+
+img:hover {
+    outline: none;
+}
 .item_goods img {
     outline: none;
+}
+
+.character {
+    border: 1px solid black;
+}
+
+.character tr:first-child {
+    line-height: 50px;
+}
+
+.character tr, td {
+    border: 1px solid black;
+    padding: 5px;
 }
