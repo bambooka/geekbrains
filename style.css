@@ -56,6 +56,10 @@ a:hover {
     font-family: monospace;
 }
 
+.menu li a:hover {
+    color: coral;
+}
+
 h3, h4 {
     color: black;
     font-size: 18px;
@@ -78,7 +82,7 @@ h3, h4 {
     text-align: left;
 }
 
-p::first-letter {
+.long_disc::first-letter {
     font-family: fantasy;
     font-size: 130%;
 }
