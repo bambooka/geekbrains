@@ -97,6 +97,10 @@ form input {
     color:beige;
 }
 
+form input, textarea {
+    text-transform: capitalize;
+}
+
 .email_form:hover {
     background-color: azure;
     color: crimson;
