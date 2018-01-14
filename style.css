@@ -97,6 +97,11 @@ form input {
     color:beige;
 }
 
+.email_form:hover {
+    background-color: azure;
+    color: crimson;
+}
+
 
 .welcome_section {
     color: brown;
