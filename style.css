@@ -130,3 +130,12 @@ img {
 .item_goods img {
     outline: none;
 }
+
+.character {
+    border: 1px solid black;
+}
+
+.character tr, td {
+    border: 1px solid black;
+    padding: 5px;
+}
