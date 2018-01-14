@@ -78,6 +78,11 @@ h3, h4 {
     text-align: left;
 }
 
+p::first-letter {
+    color: red;
+    font-size: 130%;
+}
+
 .details li {
     list-style-image: url(img/marker.png);
 }
@@ -126,6 +131,10 @@ form input, textarea {
 
 img {
     outline: 3px double blue;
+}
+
+img:hover {
+    outline: none;
 }
 .item_goods img {
     outline: none;
