@@ -79,7 +79,7 @@ h3, h4 {
 }
 
 p::first-letter {
-    color: red;
+    font-family: fantasy;
     font-size: 130%;
 }
 
@@ -142,6 +142,10 @@ img:hover {
 
 .character {
     border: 1px solid black;
+}
+
+.character tr:first-child {
+    line-height: 50px;
 }
 
 .character tr, td {
