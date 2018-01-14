@@ -2,10 +2,30 @@ body {
     background-color: #f8f8f8;
 }
 
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+header div:nth-child(2) {
+    text-align: right;
+}
+
+.logo img {
+    width: 150px;
+    outline: none;
+}
+
 a {
     font-size: 20px;
     color: brown;
     font-style: oblique;
+}
+
+a:hover {
+    color: darkolivegreen;
 }
 
 .menu {
