@@ -43,7 +43,6 @@ a:hover {
 
 .menu {
     text-align: right;
-    
 }
 
 .menu li {
@@ -53,7 +52,6 @@ a:hover {
     text-align: center;
     border: 1px solid brown;
     background-color: burlywood;
-    border-radius: 15px;
 }
 
 .menu li a {
@@ -163,4 +161,26 @@ img:hover {
 .character tr, td {
     border: 1px solid black;
     padding: 5px;
+}
+
+footer {
+    height: 50px;
+    background-color: darkred;
+    color: azure;
+}
+
+footer copyright {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+footer copyright a {
+    color: azure;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+footer copyright a:hover {
+    color: beige;
 }
