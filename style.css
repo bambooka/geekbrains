@@ -2,12 +2,23 @@ body {
     background-color: #f8f8f8;
 }
 
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
 header {
+    height: 125px;
     display: flex;
     justify-content:space-between;
     align-items: flex-end;
-    background-color: antiquewhite;
+    background-image: url(img/for_header.jpg);
     
+}
+
+.logo {
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
 header div:nth-child(2) {
@@ -33,9 +44,6 @@ a:hover {
 
 .menu {
     text-align: right;
-    padding-right: 50px;
-    padding-right: 90px;
-    
 }
 
 .menu li {
@@ -45,7 +53,6 @@ a:hover {
     text-align: center;
     border: 1px solid brown;
     background-color: burlywood;
-    border-radius: 15px;
 }
 
 .menu li a {
@@ -67,11 +74,45 @@ h3, h4 {
     background: #eaeaea;
 }
 
+.main_desc {
+    position: relative;
+}
+
+
+.main_desc img {
+    height: 300px;
+}
+
 .short_disc {
     color: #707070;
-    font-size: 14px;
+    font-size: 15px;
     font-style: italic;
     line-height: 16px;
+    top: 50%;
+    float: right;
+    position: absolute;
+    left: 50%;
+}
+
+.btn_buy {
+    height: 40px;
+    position: absolute;
+    left: 65%;
+    top: 70%;
+    width: 20%;
+    background-color: coral;
+    color: azure;
+    border-radius: 5px;
+}
+
+.btn_buy:hover {
+    background-color: antiquewhite;
+    color: coral;
+}
+
+.btn_buy:active {
+    background-color: bisque;
+    color: brown;
 }
 
 .long_disc {
@@ -93,7 +134,7 @@ h3, h4 {
 
 form input {
     width: 20%;
-    height: 10px;
+    height: 20px;
     color: brown;
     border: 1px solid brown;
     background-color: cornsilk;
@@ -155,4 +196,41 @@ img:hover {
 .character tr, td {
     border: 1px solid black;
     padding: 5px;
+}
+
+footer {
+    height: 50px;
+    background-color: darkred;
+    color: azure;
+}
+
+footer copyright {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+footer copyright a {
+    color: azure;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+footer copyright a:hover {
+    color: beige;
+}
+
+.wrapper_catalog_goods {
+    text-align: center;
+}
+
+.wrapper_catalog_goods .item_goods {
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 374px;
 }
