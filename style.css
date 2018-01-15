@@ -79,7 +79,7 @@ h3, h4 {
 
 
 .main_desc img {
-    height: 250px;
+    height: 300px;
 }
 
 .short_disc {
@@ -217,4 +217,14 @@ footer copyright a {
 
 footer copyright a:hover {
     color: beige;
+}
+
+.wrapper_catalog_goods {
+    text-align: center;
+}
+
+.wrapper_catalog_goods .item_goods {
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
 }
