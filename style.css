@@ -93,6 +93,27 @@ h3, h4 {
     left: 50%;
 }
 
+.btn_buy {
+    height: 40px;
+    position: absolute;
+    left: 65%;
+    top: 70%;
+    width: 20%;
+    background-color: coral;
+    color: azure;
+    border-radius: 5px;
+}
+
+.btn_buy:hover {
+    background-color: antiquewhite;
+    color: coral;
+}
+
+.btn_buy:active {
+    background-color: bisque;
+    color: brown;
+}
+
 .long_disc {
     color: #484343;
     font-size: 16px;
