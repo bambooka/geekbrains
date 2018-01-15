@@ -73,11 +73,24 @@ h3, h4 {
     background: #eaeaea;
 }
 
+.main_desc {
+    position: relative;
+}
+
+
+.main_desc img {
+    height: 250px;
+}
+
 .short_disc {
     color: #707070;
-    font-size: 14px;
+    font-size: 15px;
     font-style: italic;
     line-height: 16px;
+    top: 50%;
+    float: right;
+    position: absolute;
+    left: 50%;
 }
 
 .long_disc {
