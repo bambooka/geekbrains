@@ -17,9 +17,9 @@
             </div>
             <div>
                 <ul class="menu">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="catalog/catalog_2.html">Каталог</a></li>
-                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="index.php">Главная</a></li>
+                    <li><a href="catalog/catalog_2.php">Каталог</a></li>
+                    <li><a href="contact.php">Контакты</a></li>
                 </ul>
             </div>
         </header>
