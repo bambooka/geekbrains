@@ -32,48 +32,35 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header clearfix">
-                        <h2 class="pull-left">Список материалов</h2>
+                        <h2 class="pull-left">Список всех украшений</h2>
+                        <a href="create.php" class="btn btn-success pull-right">Добавить новое украшение</a>
                     </div>
                     <?php
                     // Include config file
                     require_once "config.php";
                     
                     // Attempt select query execution
-                    $sql = "SELECT * FROM material";
+                    $sql = "SELECT * FROM item";
                     if($result = $mysqli->query($sql)){
                         if($result->num_rows > 0){
                             echo "<table class='table table-bordered table-striped'>";
                             echo "<thead>";
                             echo "<tr>";
-                            echo "<th>Артикул</th>";
                             echo "<th>Изображение</th>";
                             echo "<th>Название</th>";
-                            echo "<th>Единица измерения</th>";
-                            echo "<th>Количество</th>";
-                            echo "<th>Длина</th>";
-                            echo "<th>Тип</th>";
-                            echo "<th>Закупочная цена</th>";
-                            echo "<th>Характеристики</th>";
-                            echo "<th>Основной поставщик</th>";
+                            echo "<th>Описание</th>";
                             echo "</tr>";
                             echo "</thead>";
                             echo "<tbody>";
                             while($row = $result->fetch_array()){
                                 echo "<tr>";
-                                echo "<td>" . $row['article'] . "</td>";
-                                echo "<td>" . $row['image'] . "</td>";
+                                echo "<td>" . "<img src=" . $row['image'] . " width='100px'>" . "</td>";
                                 echo "<td>" . $row['name'] . "</td>";
-                                echo "<td>" . $row['measure'] . "</td>";
-                                echo "<td>" . $row['amount'] . "</td>";
-                                echo "<td>" . $row['length'] . "</td>";
-                                echo "<td>" . $row['type'] . "</td>";
-                                echo "<td>" . $row['purchasing_price'] . "</td>";
-                                echo "<td>" . $row['property'] . "</td>";
-                                echo "<td>" . $row['main_provider'] . "</td>";
+                                echo "<td>" . $row['describe'] . "</td>";
                                 echo "<td>";
-                                echo "<a href='read.php?id=". $row['article'] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
-                                echo "<a href='material_update.php?article=". $row['article'] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
-                                echo "<a href='material_delete.php?article=". $row['article'] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
+                                echo "<a href='read.php?id=". $row['name'] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
+                                echo "<a href='material_update.php?article=". $row['name'] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
+                                echo "<a href='material_delete.php?article=". $row['name'] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
                                 echo "</td>";
                                 echo "</tr>";
                             }

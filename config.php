@@ -4,7 +4,7 @@ server with default setting (user 'root' with no password) */
 define('DB_SERVER', '127.0.0.1:3306');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '123');
-define('DB_NAME', 'manufacture_furniture');
+define('DB_NAME', 'flowberry_bonch');
  
 /* Attempt to connect to MySQL database */
 $mysqli = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
